@@ -1,0 +1,1448 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cnct:connecting_glass",
+			"properties": {
+				"cnct:cull_ud": { "values": { "min": 0, "max": 3 } },
+				"cnct:cull_nsew": { "values": { "min": 0, "max": 15 } },
+				"cnct:cnct_ud": { "values": { "min": 0, "max": 3 } },
+				"cnct:cnct_nsew": { "values": { "min": 0, "max": 15 } }
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.glass"
+			},
+			"is_experimental": true
+		},
+		"permutations": [
+			{ // _____W
+				"condition": "q.block_property('cnct:cnct_nsew') == 1 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ____E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 2 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ____EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 3 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ___S__
+				"condition": "q.block_property('cnct:cnct_nsew') == 4 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ___S_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 5 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ___SE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 6 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // ___SEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 7 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __N___
+				"condition": "q.block_property('cnct:cnct_nsew') == 8 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __N__W
+				"condition": "q.block_property('cnct:cnct_nsew') == 9 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __N_E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 10 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __N_EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 11 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __NS__
+				"condition": "q.block_property('cnct:cnct_nsew') == 12 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __NS_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 13 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __NSE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 14 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // __NSEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 15 && q.block_property('cnct:cnct_ud') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D____
+				"condition": "q.block_property('cnct:cnct_nsew') == 0 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D___W
+				"condition": "q.block_property('cnct:cnct_nsew') == 1 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D__E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 2 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D__EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 3 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D_S__
+				"condition": "q.block_property('cnct:cnct_nsew') == 4 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D_S_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 5 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D_SE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 6 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _D_SEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 7 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DN___
+				"condition": "q.block_property('cnct:cnct_nsew') == 8 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DN__W
+				"condition": "q.block_property('cnct:cnct_nsew') == 9 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DN_E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 10 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DN_EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 11 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DNS__
+				"condition": "q.block_property('cnct:cnct_nsew') == 12 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DNS_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 13 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DNSE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 14 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // _DNSEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 15 && q.block_property('cnct:cnct_ud') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"up": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_____
+				"condition": "q.block_property('cnct:cnct_nsew') == 0 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U____W
+				"condition": "q.block_property('cnct:cnct_nsew') == 1 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_14",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U___E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 2 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_13",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U___EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 3 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_12",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U__S__
+				"condition": "q.block_property('cnct:cnct_nsew') == 4 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U__S_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 5 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U__SE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 6 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U__SEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 7 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_N___
+				"condition": "q.block_property('cnct:cnct_nsew') == 8 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_11",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_7",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_N__W
+				"condition": "q.block_property('cnct:cnct_nsew') == 9 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_10",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_N_E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 10 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_9",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_5",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_6",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_N_EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 11 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_8",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_NS__
+				"condition": "q.block_property('cnct:cnct_nsew') == 12 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_NS_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 13 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_NSE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 14 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_4",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // U_NSEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 15 && q.block_property('cnct:cnct_ud') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"down": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD____
+				"condition": "q.block_property('cnct:cnct_nsew') == 0 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD___W
+				"condition": "q.block_property('cnct:cnct_nsew') == 1 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD__E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 2 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD__EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 3 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD_S__
+				"condition": "q.block_property('cnct:cnct_nsew') == 4 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD_S_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 5 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD_SE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 6 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UD_SEW
+				"condition": "q.block_property('cnct:cnct_nsew') == 7 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"north": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDN___
+				"condition": "q.block_property('cnct:cnct_nsew') == 8 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_3",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDN__W
+				"condition": "q.block_property('cnct:cnct_nsew') == 9 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDN_E_
+				"condition": "q.block_property('cnct:cnct_nsew') == 10 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_1",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_2",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDN_EW
+				"condition": "q.block_property('cnct:cnct_nsew') == 11 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"south": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDNS__
+				"condition": "q.block_property('cnct:cnct_nsew') == 12 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDNS_W
+				"condition": "q.block_property('cnct:cnct_nsew') == 13 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"east": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{ // UDNSE_
+				"condition": "q.block_property('cnct:cnct_nsew') == 14 && q.block_property('cnct:cnct_ud') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "connecting_glass_15",
+							"render_method": "blend"
+						},
+						"west": {
+							"texture": "connecting_glass_0",
+							"render_method": "blend"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.connecting_glass",
+				"bone_visibility": {
+					"up": "q.block_property('cnct:cull_ud') < 2 && q.block_property('cnct:cnct_ud') < 2",
+					"down": "math.mod(q.block_property('cnct:cull_ud'), 2) < 1 && math.mod(q.block_property('cnct:cnct_ud'), 2) < 1",
+					"north": "q.block_property('cnct:cull_nsew') < 8 && q.block_property('cnct:cnct_nsew') < 8",
+					"south": "math.mod(q.block_property('cnct:cull_nsew'), 8) < 4 && math.mod(q.block_property('cnct:cnct_nsew'), 8) < 4",
+					"east": "math.mod(q.block_property('cnct:cull_nsew'), 4) < 2 && math.mod(q.block_property('cnct:cnct_nsew'), 4) < 2",
+					"west": "math.mod(q.block_property('cnct:cull_nsew'), 2) < 1 && math.mod(q.block_property('cnct:cnct_nsew'), 2) < 1"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "connecting_glass_15",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:destructible_by_explosion": { "explosion_resistance": 0.3 },
+			"minecraft:destructible_by_mining": { "seconds_to_destroy": 0.3 },
+			"minecraft:breathability": "air",
+			"minecraft:loot": "loot_tables/empty.json",
+			"tag:connecting_glass": {}
+		}
+	}
+}

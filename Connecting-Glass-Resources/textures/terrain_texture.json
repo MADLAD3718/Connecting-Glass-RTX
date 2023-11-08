@@ -1,0 +1,22 @@
+{
+	"resource_pack_name": "cnct",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"connecting_glass_0": { "textures": "textures/blocks/connecting_glass/0" },
+		"connecting_glass_1": { "textures": "textures/blocks/connecting_glass/1" },
+		"connecting_glass_2": { "textures": "textures/blocks/connecting_glass/2" },
+		"connecting_glass_3": { "textures": "textures/blocks/connecting_glass/3" },
+		"connecting_glass_4": { "textures": "textures/blocks/connecting_glass/4" },
+		"connecting_glass_5": { "textures": "textures/blocks/connecting_glass/5" },
+		"connecting_glass_6": { "textures": "textures/blocks/connecting_glass/6" },
+		"connecting_glass_7": { "textures": "textures/blocks/connecting_glass/7" },
+		"connecting_glass_8": { "textures": "textures/blocks/connecting_glass/8" },
+		"connecting_glass_9": { "textures": "textures/blocks/connecting_glass/9" },
+		"connecting_glass_10": { "textures": "textures/blocks/connecting_glass/10" },
+		"connecting_glass_11": { "textures": "textures/blocks/connecting_glass/11" },
+		"connecting_glass_12": { "textures": "textures/blocks/connecting_glass/12" },
+		"connecting_glass_13": { "textures": "textures/blocks/connecting_glass/13" },
+		"connecting_glass_14": { "textures": "textures/blocks/connecting_glass/14" },
+		"connecting_glass_15": { "textures": "textures/blocks/connecting_glass/15" }
+	}
+}

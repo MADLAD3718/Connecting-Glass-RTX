@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Connecting Glass RTX",
+        "description": "An addon implementing interconnecting glass into Minecraft, fully supporting PBR textures.",
+        "uuid": "94579443-0971-42ec-9360-f98a83fa92ae",
+        "version": [1,0,0],
+        "min_engine_version": [1,20,40]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "17c74dfc-71c3-4320-aacd-16fec6ceb97c",
+            "version": [1,0,0]
+        },
+        {
+            "description": "Connecting Glass Script API Code",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "8a8a3303-4262-4f4f-ad43-50fde7902da5",
+            "version": [1,0,0],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "915a1eeb-5695-4476-b8e1-5db236a7aee7",
+            "version": [1,0,0]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.7.0-beta"
+        }
+    ]
+}
